@@ -40,15 +40,17 @@ export default function Details({}) {
           <Helmet>
             <title>Details</title>
             <meta name="description" content="Details Games Page" />
-          </Helmet>{" "}
+          </Helmet>
           <div className="container margin-top">
             <div className="row">
-              <div className="col-md-4 d-flex align-items-center">
-                <img
-                  className="w-100 rounded-2"
-                  src={Details.thumbnail}
-                  alt={Details.title}
-                />
+              <div className="col-md-4  ">
+                <div className="">
+                  <img
+                    className="w-100 rounded-2"
+                    src={Details.thumbnail}
+                    alt={Details.title}
+                  />
+                </div>
               </div>
               <div className="col-md-8 text-color">
                 <h2>
@@ -68,7 +70,7 @@ export default function Details({}) {
                 </h4>
                 <p className="text-black my-3">{Details.description}</p>
                 <Link
-                  to={Details.game_url}
+                  to={Details.freetogame_profile_url}
                   target="_blank"
                   className=" btn btn-outline-light"
                 >

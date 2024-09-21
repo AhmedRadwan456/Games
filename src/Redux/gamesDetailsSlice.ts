@@ -7,12 +7,10 @@ interface GameDetails {
   thumbnail: string;
   genre: string;
   platform: string;
-  short_description: string;
   title: string;
   description: string;
   status: string;
-  category: string;
-  game_url: string;
+  freetogame_profile_url: string;
 }
 
 // Define the structure of the state

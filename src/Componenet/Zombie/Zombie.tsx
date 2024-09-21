@@ -35,19 +35,22 @@ export default function Zombie() {
                           alt={product.title}
                           className="my-3 w-100"
                         />
+
                         <h3 className="h4 ">{product.title}</h3>
                         <div className=" d-flex align-items-center justify-content-between">
-                          <p className=" text-black">
+                          <p className=" w-50 text-black">
                             {product.short_description
                               .split(" ")
-                              .slice(0, 15)
+                              .slice(0, 4)
                               .join(" ")}
                           </p>
                           <div>
-                            <h5 className=" mx-3">{product.genre}</h5>
-                            <h6 className=" text-center fs-6 bg-danger rounded-2 p-1">
+                            <h3 className="h4">
+                              {product.genre.split(" ").slice(0, 1).join(" ")}
+                            </h3>
+                            <p className="text-center fs-6 m-0 bg-danger rounded-2 p-1">
                               {product.platform}
-                            </h6>
+                            </p>
                           </div>
                         </div>
                       </Link>

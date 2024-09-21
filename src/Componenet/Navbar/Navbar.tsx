@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg  bg-black  ">
+      <nav className="navbar fixed-top navbar-expand-lg  background-color2  ">
         <div className="container ">
           <Link className="navbar-brand text-white" to="/">
             <img className="logo" src={image} alt="" />
