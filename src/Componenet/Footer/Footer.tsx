@@ -42,29 +42,33 @@ export default function Footer() {
 
       <div
         id="remove"
-        className="py-3 border-0 d-block fixed-bottom background-color2 text-white d-flex justify-content-center align-items-center"
+        className="py-3 border-0 d-block fixed-bottom background-color2 text-white "
       >
-        <p className="mx-2 p-0 m-0">
+        <p className="mx-2 text-center p-0 m-0">
           We use cookies to make your browsing experience better.
         </p>
-        <button className="btn btn-outline-light mx-2">Accept</button>
-        <button className="btn btn-outline-light ">Learn More</button>
-        <button onClick={() => removeIcon()} className="btn text-white mx-5">
-          <i className="fa cursor-pointer fa-circle-xmark"></i>
-        </button>
+        <div className=" my-2 d-flex justify-content-center align-items-center">
+          {" "}
+          <button className="btn btn-outline-light mx-2">Accept</button>
+          <button className="btn btn-outline-light ">Learn More</button>
+          <button onClick={() => removeIcon()} className="btn text-white ">
+            <i className="fa cursor-pointer fa-circle-xmark"></i>
+          </button>
+        </div>
+
         {/*  */}
       </div>
 
       <div className=" background-color2 mt-0 text-white border-0">
         <div className="container d-flex justify-content-between align-items-center ">
-          <p>
+          <p className="footer-des">
             © 2024 Digiwalls Media, all rights reserved. All trademarks are
             property of their respective owners.
           </p>
-          <div className="p-1">
-            <i className="fa-brands mx-3 fa-facebook-f"></i>
-            <i className="fa-brands mx-3 fa-twitter"></i>
-            <i className="fa-solid mx-3 fa-wifi"></i>
+          <div className=" d-flex justify-content-center align-items-center">
+            <i className="fa-brands mx-2 fa-facebook-f"></i>
+            <i className="fa-brands mx-2 fa-twitter"></i>
+            <i className="fa-solid mx-2 fa-wifi"></i>
           </div>
         </div>
       </div>

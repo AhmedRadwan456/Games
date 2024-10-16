@@ -89,7 +89,11 @@ code {
   footer .container {
     padding: 20px;
   }
-
+  .footer-des {
+    margin-top: 15px;
+    font-size: 12px;
+    
+  }
   footer .col-md-3 {
     font-size: 14px;
   }
